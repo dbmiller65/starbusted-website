@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbusted - Exposing Coffee Cup Litterbugs</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#home" class="logo-container">
+                    <img src="images/logo.png" alt="Starbusted Logo" class="logo-img">
+                    <span class="logo-text">Starbusted<sup>&reg;</sup></span>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#upload">Upload</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <h2>Busted by Your Coffee Cup</h2>
+            <p>Exposing litterbugs one Starbucks cup at a time. Because if your name is on it, it's definitely yours.</p>
+            <a href="#gallery" class="btn">View Gallery</a>
+            <a href="#upload" class="btn btn-secondary">Submit a Photo</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Starbusted</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Starbusted is a community-driven project that aims to reduce littering by exposing coffee cup litterbugs. When you leave your Starbucks cup behind, your name is right there on it - and now, so is your photo on our website.</p>
+                    <p>Founded in 2025, we believe that a little public accountability can go a long way in keeping our streets, parks, and public spaces clean. Join our mission by submitting photos of abandoned Starbucks cups with names clearly visible.</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/coffee-cup-trash.jpg" alt="Discarded coffee cup with name visible">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <div class="container">
+            <h2>Busted Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/cup-jessica.jpg" alt="Jessica's cup">
+                    <h3>Jessica</h3>
+                    <p>Found at Central Park, May 10</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/cup-mike.jpg" alt="Mike's cup">
+                    <h3>Mike</h3>
+                    <p>Left on subway bench, May 8</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/cup-sarah.jpg" alt="Sarah's cup">
+                    <h3>Sarah</h3>
+                    <p>Abandoned at beach, May 7</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/cup-chris.jpg" alt="Chris's cup">
+                    <h3>Chris</h3>
+                    <p>Left in park, May 5</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="upload">
+        <div class="container">
+            <h2>Submit a Busted Cup</h2>
+            <form id="upload-form">
+                <div class="form-group">
+                    <label for="your-name">Your Name</label>
+                    <input type="text" id="your-name" name="your-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="cup-name">Name on Cup</label>
+                    <input type="text" id="cup-name" name="cup-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="location">Where Found</label>
+                    <input type="text" id="location" name="location" required>
+                </div>
+                <div class="form-group">
+                    <label for="photo">Upload Photo</label>
+                    <input type="file" id="photo" name="photo" accept="image/*" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Additional Details</label>
+                    <textarea id="description" name="description" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn">Submit Busted Cup</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-email">Email</label>
+                    <input type="email" id="contact-email" name="contact-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Starbusted. All rights reserved.</p>
+            <p class="disclaimer">This site is for environmental awareness purposes only. If you find your name and want your photo removed, please contact us.</p>
+            <div class="social-links">
+                <a href="#" class="social-link">Twitter</a>
+                <a href="#" class="social-link">Instagram</a>
+                <a href="#" class="social-link">TikTok</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

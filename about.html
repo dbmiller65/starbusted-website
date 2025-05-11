@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Starbusted - Coffee Cup Litterbugs</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Space+Mono&display=swap" rel="stylesheet">
+    <style>
+        /* Additional styles specific to about page */
+        .team-section {
+            padding: 80px 0;
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+        
+        .team-member {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .team-member:hover {
+            transform: translateY(-10px);
+        }
+        
+        .team-member img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        
+        .team-info {
+            padding: 20px;
+        }
+        
+        .team-info h3 {
+            margin-bottom: 5px;
+        }
+        
+        .team-info p.role {
+            color: var(--accent-color);
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .mission-section {
+            background: var(--light-bg);
+            padding: 80px 0;
+        }
+        
+        .timeline {
+            margin-top: 50px;
+            position: relative;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            width: 2px;
+            background: var(--accent-color);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -1px;
+        }
+        
+        .timeline-item {
+            padding: 20px 40px;
+            position: relative;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            width: 45%;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .timeline-item:nth-child(odd) {
+            margin-left: auto;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: var(--secondary-color);
+            border-radius: 50%;
+            top: 30px;
+        }
+        
+        .timeline-item:nth-child(odd)::before {
+            left: -50px;
+        }
+        
+        .timeline-item:nth-child(even)::before {
+            right: -50px;
+        }
+        
+        .timeline-date {
+            color: var(--accent-color);
+            font-weight: 600;
+            margin-bottom: 10px;
+            display: block;
+        }
+        
+        @media (max-width: 768px) {
+            .timeline::before {
+                left: 30px;
+            }
+            
+            .timeline-item {
+                width: 85%;
+                margin-left: 60px !important;
+            }
+            
+            .timeline-item::before {
+                left: -40px !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Starbusted</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html#gallery">Gallery</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about-hero" style="padding-top: 150px; text-align: center;">
+        <div class="container">
+            <h2>Our Story</h2>
+            <p>Learn about the team behind Starbusted and our mission to reduce littering one coffee cup at a time.</p>
+        </div>
+    </section>
+
+    <section class="mission-section">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 30px;">Our Mission</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 40px;">
+                At Starbusted, we believe that public spaces should be clean and free of litter. Our mission is to reduce the number of abandoned coffee cups by creating accountability through a community-driven approach to exposing litterbugs. When your name is on your trash, you should take responsibility for it.
+            </p>
+            
+            <h3 style="text-align: center; margin: 40px 0 20px;">Our Journey</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="timeline-date">May 2025</span>
+                    <h4>Starbusted.com Launch</h4>
+                    <p>The official launch of our website, bringing accountability to coffee cup litterbugs worldwide.</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">April 2025</span>
+                    <h4>First Collection of Busted Cups</h4>
+                    <p>Curated our first collection of abandoned coffee cups with names clearly visible.</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">March 2025</span>
+                    <h4>Concept Development</h4>
+                    <p>The idea for Starbusted was born after finding a Starbucks cup with "Emma" written on it abandoned in a park.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team-section">
+        <div class="container">
+            <h2 style="text-align: center;">Meet Our Team</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 40px;">
+                Our dedicated team of space enthusiasts, astronomers, and web developers work together to bring you the best cosmic content.
+            </p>
+            
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="images/placeholder-team1.jpg" alt="Team Member">
+                    <div class="team-info">
+                        <h3>Alex Green</h3>
+                        <p class="role">Founder & Environmental Activist</p>
+                        <p>With over 10 years of experience in environmental activism, Alex brings passion and vision to the Starbusted mission.</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="images/placeholder-team2.jpg" alt="Team Member">
+                    <div class="team-info">
+                        <h3>Morgan Cleanup</h3>
+                        <p class="role">Content Director</p>
+                        <p>Morgan has organized numerous community cleanup events and specializes in creating engaging content that drives environmental awareness.</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="images/placeholder-team3.jpg" alt="Team Member">
+                    <div class="team-info">
+                        <h3>Jamie Latte</h3>
+                        <p class="role">Web Developer</p>
+                        <p>Jamie creates the technical infrastructure that powers Starbusted, ensuring a seamless user experience for both uploaders and visitors.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding: 80px 0; text-align: center;">
+        <div class="container">
+            <h2>Join Our Mission</h2>
+            <p style="max-width: 800px; margin: 20px auto 40px;">
+                We're always looking for contributors, partners, and fellow environmental enthusiasts to join our mission of reducing litter one coffee cup at a time.
+            </p>
+            <a href="index.html#upload" class="btn">Submit a Cup</a>
+            <a href="index.html#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Starbusted. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" class="social-link">Twitter</a>
+                <a href="#" class="social-link">Instagram</a>
+                <a href="#" class="social-link">YouTube</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
